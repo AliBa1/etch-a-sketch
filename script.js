@@ -16,8 +16,6 @@ button.addEventListener ("click", function() {
         squares = 2;
     }
 
-    // let boxClass = document.querySelector(".box");
-    // boxClass.style.width = setBoxWidth(squares);
     console.log(squares);
     console.log(setBoxSize(squares));
 
@@ -46,6 +44,7 @@ function addBoxes(squares){
 }
 
 function setBoxSize(squares){
+    // set width and length of box
     let boxWidth = (1/squares) * 100;
     boxWidth = boxWidth + '%';
     return boxWidth;
